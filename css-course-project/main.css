@@ -93,6 +93,17 @@ body {
 .button:hover {
   outline: none;
 }
+
+#key-features {
+  background: #ff1b68;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+#key-features > .section-title {
+  color: white;
+  margin-top: 32px;
+}
 /* h1 {
     font-family: sans-serif;
 } */
