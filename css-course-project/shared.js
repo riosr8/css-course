@@ -7,24 +7,24 @@ const mobileNav = document.querySelector(".mobile-nav");
 
 selectPlanButtons.forEach((planButton) => {
   planButton.addEventListener("click", () => {
-    backdrop.style.display = "block";
-    modal.style.display = "block";
+    backdrop.classList.add("open");
+    modal.classList.add("open");
   });
 });
 
 const closeModal = () => {
-  backdrop.style.display = "none";
-  modal.style.display = "none";
+  backdrop.classList.remove("open");
+  modal.classList.remove("open");
 };
 
 backdrop.addEventListener("click", () => {
-  mobileNav.style.display = "none";
+  mobileNav.classList.remove("open");
   closeModal();
 });
 
 modalNoButton.addEventListener("click", closeModal);
 
 toggleButton.addEventListener("click", () => {
-  mobileNav.style.display = "block";
-  backdrop.style.display = "block";
+  mobileNav.classList.add("open");
+  backdrop.classList.add("open");
 });
