@@ -55,6 +55,12 @@ body {
   margin: 0.6rem 0;
 }
 
+@media (min-width: 40rem) {
+  .toggle-button {
+    display: none;
+  }
+}
+
 .main-header__brand {
   color: #0e4f1f;
   text-decoration: none;
