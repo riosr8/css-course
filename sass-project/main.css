@@ -72,6 +72,7 @@ body {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  display: flex;
   flex-direction: column;
 }
 .documentation-links li {
